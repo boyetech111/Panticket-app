@@ -1,0 +1,62 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+
+.event-content-container{
+    width: 25.25rem;
+    border: 1px solid #d7dcf8;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+.info-title{
+    font-family: 'syne';
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #2c3c90;
+    margin-bottom: 8px;
+}
+.info-description{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #1a1a38;
+}
+
+.info-description p{
+    display: inline
+}
+.date{
+    font-size: inherit;
+    color: inherit;
+    margin-right: 32px;
+}
+.ticket-container{
+    width: 25.25rem;
+}
+.ticket-title{
+    font-family: 'syne';
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #94248c;
+}
+
+
+@media screen and (min-width: 600px) {
+   .main-container{
+    padding: 0 15.813rem;
+   }
+    .event-content-container,
+    .ticket-container{
+        width: 90%;
+    }
+}

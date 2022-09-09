@@ -1,0 +1,73 @@
+.booking-container{
+    background: #ffffff;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.container-title {
+    width: 687px;
+    height: 38px;
+    font-family: "Syne";
+    font-weight: 800;
+    font-size: 32px;
+    color: #94248c;
+  }
+  .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .close-icon {
+    display: flex;
+    align-items: center;
+  
+    width: 32px;
+    height: 32px;
+    background: #eff0fa;
+    border-radius: 8px;
+  }
+  
+  .ticket-form-container {
+    display: flex;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .form-input{
+    width: 371px;
+    height: 56px;
+    margin-bottom: 24px;
+  }
+
+  .form-button{
+    width: 100%;
+    height: 56px;
+    
+  }
+  
+  .ticket-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 32px;
+  }
+  
+  .ticket-type-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .type-group,
+  .price-group,
+  .total-group {
+    display: flex;
+    justify-content: space-between;
+  }
