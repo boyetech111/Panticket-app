@@ -1,10 +1,10 @@
 import React from 'react';
 import './button.css';
 
-function Button({title, variation, } ) {
+function Button({ onclick, title, variation, } ) {
   return (
     <>
-        <button className={`${variation}-btn btn-style`}>{title}</button>
+        <button onClick={onclick} className={`${variation}-btn btn-style`}>{title}</button>
 
     </>
   )

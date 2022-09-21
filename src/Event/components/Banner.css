@@ -39,6 +39,13 @@
     font-weight: 500;
     font-size: 14px;
   }
+
+  .banner-description {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #1a1a38;
+  }
   
   @media screen and (min-width: 600px) {
     .banner {
@@ -58,4 +65,24 @@
     .banner-para {
       font-size: 24px;
     }
+    
+    .banner {
+      height: 624px;
+    }
+  
+    .banner-caption {
+      padding: 32px 125px;
+    }
+  
+    .banner-title {
+      font-family: 'Syne';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      letter-spacing: -0.02em;
+  
+      color: #94248c;
+    }
+ 
+
   }

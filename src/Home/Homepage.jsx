@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
+import axios from 'axios';
 import Button from '../components/Button';
 import Navbar from '../components/Navbar';
 import Input from '../components/Input';
@@ -6,7 +7,20 @@ import './homepage.css';
 import Card from '../components/Card';
 import BigCard from '../components/BigCard';
 
+
 function Homepage() {
+      const [allEvents, setAllEvents] = useState([])
+      useEffect(() => {
+      async function getEvents() {
+          const {data} = await axios.get(
+            'https://panticket-server.herokuapp.com/event'
+          );
+          setAllEvents(data.events)
+        }
+        getEvents();
+      },[]);
+
+
   return (
     <>
      <Navbar/>
@@ -32,13 +46,20 @@ function Homepage() {
         <div className='event-container'>
             <p className='section-title'>Events near you</p>
             <div className='events'>
-                <Card
-                  name='The Concert'
-                  image={'/image/image1.png'}
-                  location='Lagos'
+              {allEvents.map((singleEvent) => {
+                return (
+                  <Card
+                  key={singleEvent._id}
+                  id={singleEvent._id}
+                  name={singleEvent.name}
+                  image={singleEvent.image}
+                  location={singleEvent.location}
                   price='N2000'
-                  date='10/10/2022'
+                  date={singleEvent.time}
                 />
+                )
+              })}
+               
                 <Card
                   name='The Concert'
                   image={'/image/image2.png'}

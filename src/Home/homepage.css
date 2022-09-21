@@ -4,6 +4,8 @@
     align-items: center;
     background-image: url('../../public/image/Rectangle467.png');
     height: 36.688rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .header-text{
@@ -42,7 +44,7 @@
 }
 
 .event-container{
-    /* margin: 5rem 0; */
+    margin: 5rem 0;
     padding: 0 3rem;
     width: 100%;
 }

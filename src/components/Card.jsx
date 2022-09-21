@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './card.css';
 
 function Card({image, location, price, date, name}) {
@@ -7,7 +8,9 @@ function Card({image, location, price, date, name}) {
       <div className='card-container'>
             <img src={`${image}`} alt='event' />
             <div className='card-details'>
-                <p className='name'>{name}</p>
+              <Link to={'./event/1'}>
+              <p className='name'>{name}</p>
+              </Link>
                 <p className='date'>{date}</p>
                 <p className='location'>{location}</p>
                 <p className='price'>{price}</p>

@@ -2,7 +2,7 @@ import './ticket-category.css';
 import React from 'react'
 import Button from '../../components/Button';
 
-function TicketCategory({name, price, availableTicket, color}) {
+function TicketCategory({name, price, setModal, availableTicket, color}) {
   return (
     <div className='ticket-wrapper'>
         <div className='ticket-type'>
@@ -18,7 +18,11 @@ function TicketCategory({name, price, availableTicket, color}) {
             </div>
         </div>
         <div className='button'>
-           <Button  title={'Get Ticket'} variation='secondary' />
+           <Button 
+              onclick={() => setModal((prevState) => !prevState)}
+              title={'Get Ticket'} 
+              variation='secondary' 
+            />
         </div>
     </div>
   )

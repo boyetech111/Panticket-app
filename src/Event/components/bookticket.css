@@ -3,6 +3,7 @@
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
     padding: 2rem;
+    gap: 32px;
 }
 
 .container-title {
@@ -22,52 +23,76 @@
   .close-icon {
     display: flex;
     align-items: center;
-  
+    justify-content: center;
     width: 32px;
     height: 32px;
     background: #eff0fa;
-    border-radius: 8px;
+    border-radius: 0.5rem;
+    border: none;
   }
   
   .ticket-form-container {
     display: flex;
+    justify-content: space-between;
   }
   
-  form {
+  .ticket-form{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     gap: 32px;
+    width: 371px;
   }
 
   .form-input{
-    width: 371px;
+    width: 100%;
     height: 56px;
-    margin-bottom: 24px;
   }
 
   .form-button{
     width: 100%;
     height: 56px;
-    
+    margin-bottom: 24px;
   }
   
   .ticket-summary {
     display: flex;
     flex-direction: column;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    width: 21.25rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    color: #1a1a38;
     gap: 32px;
-    margin-left: 32px;
   }
   
   .ticket-type-group {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 64px;
   }
   
   .type-group,
   .price-group,
   .total-group {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 8px;
+  }
+
+  .total-group {
+    font-weight: 700;
+  }
+
+  .regular{
+    opacity: 0.5px;
+  }
+
+  @media screen and (min-width: 900px) {
+    .booking-container{
+      width: 50.4375rem;
+    }
   }

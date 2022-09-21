@@ -7,18 +7,28 @@ function Footer() {
         <div className="footer-logo">
           <img src="/image/Pantiket-logo.png" alt="footer-logo" />
         </div>
-        <div className="footer-details">
-          <div className="phone">
+        <div className="right-flex">
+          <div id="phone-container" className="flex-container">
+            <a href="tel:+234 812 345 6789">
             <img src="/image/phone.png" alt="phone" />
-            <span>+234 812 345 6789</span>
+            </a>
+            <a href='tel:+2348123456789' className='phone'>
+              +234 812 345 6789
+            </a>
           </div>
 
-          <div className="email">
+          <div id="email-container" className="flex-container icon">
+            <a href="mailto:hello@pantiket.ng">
             <img src="/image/email.png" alt="email" />
-            <a href="mailto:hello@pantiket.ng">hello@pantiket.ng</a>
+            </a>
+            <a href="mailto:hello@pantiket.ng"  className='email'>
+            hello@pantiket.ng
+            </a>
           </div>
 
-          <div className="icons">
+          
+
+          <div id='icon-container' className='flex-container'>
             <img src="/image/linkedin.png" alt="linkedin" />
             <img src="/image/whatsapp.png" alt="whatsapp" />
             <img src="/image/facebooks.png" alt="facebook" />
@@ -36,3 +46,4 @@ function Footer() {
 }
 
 export default Footer;
+
